@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ejercicio10.css">
+</head>
+<body>
+    <div class="contenedor-calculadora">
+        <h1>Calculo con arreglos</h1>
+        
+        <div class="grupo-formulario">
+            <label for="inputNumeros">Números (separados por comas):</label>
+            <input type="text" id="inputNumeros" placeholder="Ej: 10, 22, 30" required >
+        </div>
+
+        <button id="btnCalcular" class="boton-convertir">Calcular</button>
+
+        <div class="grupo-formulario">
+            <label for="resultadoMayor">Número mayor:</label>
+            <input type="text" id="resultadoMayor" readonly placeholder="Resultado">
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="resultadoMenor">Número menor:</label>
+            <input type="text" id="resultadoMenor" readonly placeholder="Resultado">
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="resultadoPromedio">Promedio:</label>
+            <input type="text" id="resultadoPromedio" readonly placeholder="Resultado">
+        </div>
+
+        <p id="mensajeError" class="mensaje-error"></p>
+    </div>
+
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>

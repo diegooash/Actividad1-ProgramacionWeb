@@ -1,0 +1,94 @@
+:root {
+    --color-primario: #0f6167;
+    --color-secundario: #45d2fd;
+    --color-fondo: #F8F9FA;
+    --color-texto: #2b423f;
+    --color-borde: #E9ECEF;
+    --color-error: #e74c3c;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-calculadora {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: var(--color-secundario);
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #f1f3f5;
+    color: #495057;
+    cursor: not-allowed;
+}
+
+.boton-convertir {
+    background-color: #06414b;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 15px;
+}
+
+.boton-convertir:hover {
+    background-color: #000c0c;
+}
+
+.mensaje-error {
+    color: var(--color-error);
+    font-size: 14px;
+    text-align: center;
+    min-height: 20px;
+    margin: 0;
+}

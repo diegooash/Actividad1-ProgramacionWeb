@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 - Gestión de tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ejercicio17.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="contenedor-calculadora">
+        <h1>Gestión de tareas</h1>
+        
+        <div class="grupo-formulario">
+            <label for="inputTarea">Nueva tarea:</label>
+            <input type="text" id="inputTarea" placeholder="Ej: Ver el partido de Mexico">
+        </div>
+
+        <button id="btnAgregar" class="boton-convertir">Agregar Tarea</button>
+        
+        <label>Listado de tareas pendientes:</label>
+        <div id="listaTareas" class="lista-estudiantes">
+            <p><em>No hay tareas pendientes</em></p>
+        </div>
+        <p id="mensajeError" class="mensaje-error"></p>
+    </div>
+    <script src="js/ejercicio17.js"></script>
+</body>
+</html>

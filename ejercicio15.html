@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Gestión de Estudiantes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+<body>
+    <div class="contenedor-calculadora">
+        <h1>Tabla de estudiantes</h1>
+
+        <div class="grupo-formulario">
+            <label for="inputNombre">Nombre del estudiante:</label>
+            <input type="text" id="inputNombre" placeholder="Ej: Alonso">
+        </div>
+        <div class="grupo-formulario">
+            <label for="inputCalificacion">Calificacion:</label>
+            <input type="number" id="inputCalificacion" placeholder="Ej: 95" min="0" max="100">
+        </div>
+
+        <button id="btnAgregar" class="boton-convertir">Agregar estudiante</button>
+
+        <label>Estudiantes:</label>
+        <div id="listaEstudiantes" class="lista-estudiantes">
+            <p><em>...</em></p>
+        </div>
+
+        <button id="btnCalcular" class="boton-convertir boton-secundario">Calcular</button>
+
+        <div class="grupo-formulario">
+            <label for="resultadoPromedio">Calificacion promedio:</label>
+            <input type="text" id="resultadoPromedio" readonly placeholder="Resultado">
+        </div>
+        <div class="grupo-formulario">
+            <label for="resultadoMayor">Estudiante con calificacion mas alta:</label>
+            <input type="text" id="resultadoMayor" readonly placeholder="Resultado">
+        </div>
+        <div class="grupo-formulario">
+            <label for="resultadoMenor">Estudiante con calificacion mas baja:</label>
+            <input type="text" id="resultadoMenor" readonly placeholder="Resultado">
+        </div>
+
+        <p id="mensajeError" class="mensaje-error"></p>
+    </div>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>
