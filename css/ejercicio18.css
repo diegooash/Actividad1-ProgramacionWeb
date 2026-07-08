@@ -1,0 +1,49 @@
+:root {
+    --color-primario: #0f6167;
+    --color-secundario: #45d2fd;
+    --color-fondo: #F8F9FA;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.tarjeta-custom {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primario-custom {
+    background-color: var(--color-primario);
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-primario-custom:hover {
+    background-color: #06414b;
+    color: white;
+}
+
+.btn-primario-custom:active {
+    transform: scale(0.98);
+}
+
+.list-group-item {
+    transition: background-color 0.2s;
+    word-break: break-all;
+}
+
+.list-group-item:hover {
+    background-color: #f1f8f9;
+}
